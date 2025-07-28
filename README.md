@@ -67,6 +67,28 @@ Ensure the `pom.xml` is configured to create a WAR file:
 ```xml
 <packaging>war</packaging>
 ```
+## Setup Instructions
+
+1. **Clone the Repository**: 
+   ```
+   git clone <repository-url>
+   cd sjkcollege-rest-api
+   ```
+
+2. **Configure Database Connection**: 
+   Update the `src/main/resources/application.properties` file with your Azure SQL database connection details.
+
+3. **Build the Project**: 
+   Use Maven to build the project and create a WAR file:
+   ```
+   mvn clean package
+   ```
+
+4. **Deploy to Azure**: 
+   Deploy the generated WAR file to Azure Web App Service with Windows OS option.
+
+## Deployment
+This project is designed to be deployed in Azure Web App Service with Windows OS. Follow Azure documentation for deployment steps.
 
 ## Exception Handling
 General user exceptions are managed in the `ExceptionHandlerAdvice` class. Custom messages for exceptions and validations are defined in the `messages.properties` file.
@@ -81,11 +103,7 @@ The base URL for the API is `/sjkcollege/`. The following endpoints are availabl
 - **PUT** `/sjkcollege/students/{rollNumber}` - Update an existing student
 - **DELETE** `/sjkcollege/students/{rollNumber}` - Delete a student by roll number
 
-## Deployment
-This project is designed to be deployed in Azure Web App Service with Windows OS. Follow Azure documentation for deployment steps.
+
 
 ## Conclusion
 This README provides an overview of the SJK College REST API project, including its structure, database setup, dependencies, and API endpoints. For further details, refer to the individual class files and configurations within the project.# sjkcollege-restapi
-# sjkcollege-restapi
-# sjkcollege-restapi
-# sjkcolleg
