@@ -40,19 +40,19 @@ sjkcollege-restapi
 ## Database Setup
 ### Create Table
 ```sql
-CREATE TABLE Students (
-    RollNumber VARCHAR(10) PRIMARY KEY,
-    FirstName VARCHAR(50) NOT NULL,
-    LastName VARCHAR(50),
-    Email VARCHAR(100) NOT NULL,
-    Address VARCHAR(255),
-    Department VARCHAR(50) NOT NULL
+CREATE TABLE Student (
+    roll_number VARCHAR(10) PRIMARY KEY,
+    first_name VARCHAR(50) NOT NULL,
+    last_name VARCHAR(50),
+    email VARCHAR(100) NOT NULL,
+    address VARCHAR(255),
+    department VARCHAR(50) NOT NULL
 );
 ```
 
 ### Sample Data Insertion
 ```sql
-INSERT INTO Students (RollNumber, FirstName, LastName, Email, Address, Department) VALUES
+INSERT INTO Student (roll_number, first_name, last_name, email, address, department) VALUES
 ('4JK25CV001', 'John', 'Doe', 'john.doe@example.com', '123 Main St', 'Computer Science'),
 ('4JK25CV002', 'Jane', 'Smith', 'jane.smith@example.com', '456 Elm St', 'Electrical Engineering');
 ```
